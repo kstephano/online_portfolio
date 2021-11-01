@@ -24,6 +24,9 @@ a {
 .header-nav {
     display: flex;
     flex-direction: row;
+    align-content: center;
+    height: 100%;
+    border: 1px solid red;
 }
 
 .header-nav > ul {
@@ -32,9 +35,13 @@ a {
     list-style-type: none;
 }
 
+.nav-option {
+    margin: 0 3px;
+    border: 1px solid orange;
+}
+
 .section {
     width: 100%;
-    border: 1px solid orange;
 }
 
 #section-one-img {
