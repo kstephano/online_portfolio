@@ -26,7 +26,6 @@ a {
     flex-direction: row;
     align-content: center;
     height: 100%;
-    border: 1px solid red;
 }
 
 .header-nav > ul {
@@ -35,9 +34,16 @@ a {
     list-style-type: none;
 }
 
+.header-nav > ul > a {
+    align-self: center;
+}
+
 .nav-option {
     margin: 0 3px;
-    border: 1px solid orange;
+}
+
+.header-title__container {
+
 }
 
 .section {
