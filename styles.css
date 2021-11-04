@@ -141,6 +141,12 @@ a {
 .img-link {
     width: 35px;
     padding-bottom: 20px;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.img-link:hover {
+    opacity: .5;
 }
 
 #section-two {
