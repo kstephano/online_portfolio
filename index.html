@@ -1,88 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="static/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="static/index.js" defer></script>
     <title>Online Portfolio</title>
-</head>
-<body>
-    <header class="header">
-        <div class="nav-container">
-            <nav class="header-nav">
-                <ul>
-                    <li class="nav-option"><a href="#section-one">Intro</a></li>
-                    <li class="nav-option"><a href="#section-two">Work</a></li>
-                    <li class="nav-option"><a href="#section-three">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+  </head>
+  <body>
+    <header class="header" data-header>
+      <img src="assets/logo.png" id="logo" />
+      <div class="nav-container">
+        <nav class="header-nav">
+          <ul>
+            <li class="nav-option">
+              <a href="#intro" class="nav-link" data-link>Intro</a>
+            </li>
+            <li class="nav-option">
+              <a href="#tech-stack" class="nav-link" data-link>Tech Stack</a>
+            </li>
+            <li class="nav-option">
+              <a href="#projects" class="nav-link" data-link>Projects</a>
+            </li>
+            <li class="nav-option">
+              <a href="#contact" class="nav-link" data-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section class="section" id="section-one">
-        <img class="section-one__img-hello" src="hello.png" alt="Hello">
-        <h1 class="section-one__title">I'm Kelvin</h1>
-        <p class="section-one__desc">an aspiring full stack software engineer</p>
-        <div class="section-one__links-container">
-            <a href="https://github.com/kstephano" target="_blank">
-                <img class="img-link" src="github.png" alt="Github link">
-            </a>
-            <a href="https://www.linkedin.com/in/kelvin-stephano-4b01b31b3/" target="_blank">
-                <img class="img-link" src="linkedin-icon.jpg" alt="LinkedIn link">
-            </a>
-        </div>
+    <section id="intro" data-section="intro">
+      <img class="section-one__img-hello" src="assets/hello.png" alt="Hello" />
+      <h1 class="section-one__title">I'm Kelvin</h1>
+      <p class="section-one__desc">Full-Stack Software Engineer</p>
+      <div class="section-one__links-container">
+        <a href="https://github.com/kstephano" target="_blank">
+          <img class="img-link" src="assets/github.png" alt="Github link" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/kelvin-stephano-4b01b31b3/"
+          target="_blank"
+        >
+          <img
+            class="img-link"
+            src="assets/linkedin-icon.jpg"
+            alt="LinkedIn link"
+          />
+        </a>
+      </div>
     </section>
-    <section class="section" id="section-two">
-        <h2 class="section-two__title">Projects</h2>
-        <img class="section-two__img-code" src="code.jpg" alt="Code background">
-        <div class="section-two__grid">
-            <a href="#" class="project-link">
-                <div class="section-two__grid-item">
-                    <img src="https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Project One" class="grid-item__img">
-                    <div class="grid-item__title-container">
-                        <span class="grid-item__title-chevron"><</span>
-                        <span class="grid-item__title">Project One</span>
-                        <span class="grid-item__title-chevron">/></span>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="section-two__grid-item">
-                    <img src="" alt="Project Two" class="grid-item__img">
-                    <div class="grid-item__title-container">
-                        <span class="grid-item__title-chevron"><</span>
-                        <span class="grid-item__title">Project Two</span>
-                        <span class="grid-item__title-chevron">/></span>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="section-two__grid-item">
-                    <img src="" alt="Project Three" class="grid-item__img">
-                    <div class="grid-item__title-container">
-                        <span class="grid-item__title-chevron"><</span>
-                        <span class="grid-item__title">Project Three</span>
-                        <span class="grid-item__title-chevron">/></span>
-                    </div>
-                </div>
-            </a>
-           <a href="#">
-                <div class="section-two__grid-item">
-                    <img src="" alt="Project Four" class="grid-item__img">
-                    <div class="grid-item__title-container">
-                        <span class="grid-item__title-chevron"><</span>
-                        <span class="grid-item__title">Project Four</span>
-                        <span class="grid-item__title-chevron">/></span>
-                    </div>
-                </div>
-           </a>
-        </div>
+    <section id="tech-stack" data-section="tech-stack"></section>
+    <section id="projects" data-section="projects">
+      <h2 class="section-three__title">Projects</h2>
+      <!-- <div class="section-three__grid">
+        <a href="#" class="project-link">
+          <div class="section-three__grid-item">
+            <img
+              src="https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+              alt="Project One"
+              class="grid-item__img"
+            />
+            <div class="grid-item__title-container">
+              <span class="grid-item__title-chevron"><</span>
+              <span class="grid-item__title">Project One</span>
+              <span class="grid-item__title-chevron">/></span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="section-three__grid-item">
+            <img src="" alt="Project Two" class="grid-item__img" />
+            <div class="grid-item__title-container">
+              <span class="grid-item__title-chevron"><</span>
+              <span class="grid-item__title">Project Two</span>
+              <span class="grid-item__title-chevron">/></span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="section-three__grid-item">
+            <img src="" alt="Project Three" class="grid-item__img" />
+            <div class="grid-item__title-container">
+              <span class="grid-item__title-chevron"><</span>
+              <span class="grid-item__title">Project Three</span>
+              <span class="grid-item__title-chevron">/></span>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="section-three__grid-item">
+            <img src="" alt="Project Four" class="grid-item__img" />
+            <div class="grid-item__title-container">
+              <span class="grid-item__title-chevron"><</span>
+              <span class="grid-item__title">Project Four</span>
+              <span class="grid-item__title-chevron">/></span>
+            </div>
+          </div>
+        </a>
+      </div> -->
     </section>
-    <section class="section" id="section-three">
-        <div class="section-three__contact-info">
-            <p class="contact-info-line">kstephano@gmail.com</p>
-            <p class="contact-info-line">07909056939</p>
-        </div>
+    <section id="contact" data-section="contact">
+      <div class="section-four__contact-info">
+        <p class="contact-info-line">kstephano@gmail.com</p>
+        <p class="contact-info-line">07909056939</p>
+      </div>
     </section>
-</body>
+  </body>
 </html>
