@@ -2,6 +2,8 @@ const sections = [...document.querySelectorAll("[data-section]")];
 const header = document.querySelector(".header");
 const navLinks = [...document.querySelectorAll(".nav-link")];
 
+console.log(navLinks);
+
 let prevYPosition = 0;
 let direction = "up";
 
@@ -12,6 +14,7 @@ const options = {
 
 const getTargetSection = (entry) => {
   const index = sections.findIndex((section) => section == entry.target);
+  console.log(index);
 
   if (index >= sections.length - 1) {
     return entry.target;
@@ -22,7 +25,6 @@ const getTargetSection = (entry) => {
 
 const updateColours = (target) => {
   const theme = target.dataset.section;
-  console.log(theme);
   header.setAttribute("data-theme", theme);
 };
 
@@ -39,7 +41,6 @@ const shouldUpdate = (entry) => {
 
 const updateMarker = (target) => {
   const id = target.id;
-
   if (!id) return;
 
   let link = navLinks.find((el) => {
@@ -85,20 +86,3 @@ const observer = new IntersectionObserver(onIntersect, options);
 sections.forEach((section) => {
   observer.observe(section);
 });
-
-// if ("IntersectionObserver" in window) {
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       console.log(entries);
-//       entries.forEach((entry) => {
-//         navLinks.forEach((link) => {
-//           link.classList.toggle("nav-link-bg-2", entry.isIntersecting);
-//         });
-//       });
-//     },
-//     {
-//       threshold: 0.93,
-//     }
-//   );
-//   observer.observe(section);
-// }
