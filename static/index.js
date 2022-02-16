@@ -6,7 +6,7 @@ let prevYPosition = 0;
 let direction = "up";
 
 const options = {
-  rootMargin: `${header.offsetHeight * -1}px`,
+  rootMargin: `${header.clientHeight * -1}px`,
   threshold: 0,
 };
 
