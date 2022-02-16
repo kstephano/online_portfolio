@@ -2,8 +2,6 @@ const sections = [...document.querySelectorAll("[data-section]")];
 const header = document.querySelector(".header");
 const navLinks = [...document.querySelectorAll(".nav-link")];
 
-console.log(navLinks);
-
 let prevYPosition = 0;
 let direction = "up";
 

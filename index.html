@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="static/index.js" defer></script>
-    <script src="static/scroll.js" defer></script>
+    <script src="static/gridIntersect.js" defer></script>
+    <script src="static/projectIntersect.js" defer></script>
     <title>Online Portfolio</title>
   </head>
   <body>
@@ -24,19 +25,32 @@
             <li class="nav-option">
               <a href="#projects" class="nav-link" data-link>Projects</a>
             </li>
-            <li class="nav-option">
-              <a href="#contact" class="nav-link" data-link>Contact</a>
-            </li>
           </ul>
         </nav>
       </div>
     </header>
     <section id="intro" data-section="intro">
-      <img class="section-one__img-hello" src="assets/hello.png" alt="Hello" />
-      <h1 class="section-one__title">I'm Kelvin</h1>
-      <p class="section-one__desc">
-        Full-Stack Software Engineer and CS Graduate
-      </p>
+      <img class="intro__img-hello" src="assets/hello.png" alt="Hello" />
+      <h1 class="intro__title">I'm Kelvin</h1>
+      <p class="intro__desc">Full-Stack Software Engineer and CS Graduate</p>
+      <div class="contact__links-container">
+        <a href="https://github.com/kstephano" target="_blank">
+          <img class="img-link" src="assets/github.png" alt="Github link" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/kelvin-stephano-4b01b31b3/"
+          target="_blank"
+        >
+          <img
+            class="img-link"
+            src="assets/linkedin-icon.jpg"
+            alt="LinkedIn link"
+          />
+        </a>
+        <a href="/assets/CV.pdf" target="_blank">
+          <img class="img-link" src="assets/cv_icon.png" alt="CV link" />
+        </a>
+      </div>
     </section>
     <section id="tech" data-section="tech">
       <h2 class="tech-title">Tech Stack</h2>
@@ -99,75 +113,234 @@
       </div>
     </section>
     <section id="projects" data-section="projects">
-      <h2 class="section-three__title">Projects</h2>
-      <!-- <div class="section-three__grid">
-        <a href="#" class="project-link">
-          <div class="section-three__grid-item">
-            <img
-              src="https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-              alt="Project One"
-              class="grid-item__img"
-            />
-            <div class="grid-item__title-container">
-              <span class="grid-item__title-chevron"><</span>
-              <span class="grid-item__title">Project One</span>
-              <span class="grid-item__title-chevron">/></span>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="section-three__grid-item">
-            <img src="" alt="Project Two" class="grid-item__img" />
-            <div class="grid-item__title-container">
-              <span class="grid-item__title-chevron"><</span>
-              <span class="grid-item__title">Project Two</span>
-              <span class="grid-item__title-chevron">/></span>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="section-three__grid-item">
-            <img src="" alt="Project Three" class="grid-item__img" />
-            <div class="grid-item__title-container">
-              <span class="grid-item__title-chevron"><</span>
-              <span class="grid-item__title">Project Three</span>
-              <span class="grid-item__title-chevron">/></span>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="section-three__grid-item">
-            <img src="" alt="Project Four" class="grid-item__img" />
-            <div class="grid-item__title-container">
-              <span class="grid-item__title-chevron"><</span>
-              <span class="grid-item__title">Project Four</span>
-              <span class="grid-item__title-chevron">/></span>
-            </div>
-          </div>
-        </a>
-      </div> -->
-    </section>
-    <section id="contact" data-section="contact">
-      <div class="contact__links-container">
-        <a href="https://github.com/kstephano" target="_blank">
-          <img class="img-link" src="assets/github.png" alt="Github link" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/kelvin-stephano-4b01b31b3/"
-          target="_blank"
-        >
+      <h2 class="projects__title">Projects</h2>
+      <div class="projects__container">
+        <div class="project-div">
           <img
-            class="img-link"
-            src="assets/linkedin-icon.jpg"
-            alt="LinkedIn link"
+            src="assets/E-Thrift.png"
+            alt="E-Commerce Project"
+            class="project-img"
           />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/kelvin-stephano-4b01b31b3/"
-          target="_blank"
-        >
-          <img class="img-link" src="assets/cv_icon.png" alt="CV link" />
-        </a>
+          <div class="project-info">
+            <h3>E-Thrift</h3>
+            <b
+              ><p>
+                Final group project done with Futureproof where we created an
+                e-commerce website that uses the concept of freecycling to allow
+                users to list unwanted items.
+              </p></b
+            >
+            <p>
+              We used React for front-end and Django for back-end. My
+              responsibilities were front-end and front-end testing using Jest
+              and the React Testing Library.
+            </p>
+            <div class="project-buttons-container">
+              <a
+                href="https://github.com/kstephano/E-Thrift"
+                target="_blank"
+                class="project-button"
+                ><span class="code">< </span>GitHub<span class="code">
+                  /></span
+                ></a
+              >
+              <a
+                href="https://e-thrift.netlify.app/"
+                target="_blank"
+                class="project-button"
+                ><span class="code">< </span>Website<span class="code">
+                  /></span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-div">
+          <img
+            src="assets/fabulous-quiz-game.png"
+            alt="Quiz Game Project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3>Fabulous Quiz Game</h3>
+            <b
+              ><p>
+                Myself and three others created an interactive multiplayer quiz
+                game using Socket.io.
+              </p></b
+            >
+            <p>
+              Uses React for front-end and Node/Express/PostgreSQL for back-end.
+              I implemented the socket logic on both client and server, and
+              worked on front-end to facilitate these features.
+            </p>
+            <div class="project-buttons-container">
+              <a
+                href="https://github.com/kstephano/fabulous-quiz-game"
+                target="_blank"
+                class="project-button"
+                ><span class="code">< </span>GitHub<span class="code">
+                  /></span
+                ></a
+              >
+              <a class="disabled-btn"
+                ><span class="code">< </span>Website<span class="code">
+                  /></span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-div">
+          <img
+            src="assets/Habit-Are-Forever.png"
+            alt="Habit Tracker Project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3>Habits Are Forever</h3>
+            <b
+              ><p>
+                A four man group project where we created a habit tracking
+                application, complete with leaderboards, custom habits, and user
+                log-in features.
+              </p></b
+            >
+            <p>
+              Uses Node JS for front-end and Node/Express/MongoDB for back-end.
+              My work was focused mainly on server and server testing, with some
+              involvement in client.
+            </p>
+            <div class="project-buttons-container">
+              <a
+                href="https://github.com/kstephano/habit_tracker"
+                target="_blank"
+                class="project-button"
+                ><span class="code">< </span>GitHub<span class="code">
+                  /></span
+                ></a
+              >
+              <a
+                href="https://habitsareforever.netlify.app/index.html"
+                target="_blank"
+                class="project-button"
+                ><span class="code">< </span>Website<span class="code">
+                  /></span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-div">
+          <img
+            src="assets/Postify.png"
+            alt="Journaling Website Project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3>Postify</h3>
+            <b
+              ><p>
+                The first group project done with Futureproof, where we created
+                a journaling website for users to create, view, and interact
+                with posts.
+              </p></b
+            >
+            <p>
+              We used Node JS for front-end and Node/Express for back-end. I
+              worked on server and server testing, with some involvement in
+              client.
+            </p>
+            <div class="project-buttons-container">
+              <a
+                href="https://github.com/kstephano/journaling_website"
+                target="_blank"
+                class="project-button"
+                ><span class="code">< </span>GitHub<span class="code">
+                  /></span
+                ></a
+              >
+              <a
+                href="https://postify-journal.netlify.app/"
+                target="_blank"
+                class="project-button"
+                ><span class="code">< </span>Website<span class="code">
+                  /></span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-div">
+          <img
+            src="assets/FitTrack.png"
+            alt="Social Media App"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3>FitTrack</h3>
+            <b
+              ><p>
+                A social media Android application created for my third year
+                project at university.
+              </p></b
+            >
+            <p>
+              Technologies used includes Kotlin, Android Stuio, and Amazon
+              Firebase to store user data.
+            </p>
+            <div class="project-buttons-container">
+              <a
+                href="https://github.com/kstephano/FitTrackMobile"
+                target="_blank"
+                class="project-button"
+                ><span class="code">< </span>GitHub<span class="code">
+                  /></span
+                ></a
+              >
+              <a class="disabled-btn"
+                ><span class="code">< </span>Website<span class="code">
+                  /></span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-div">
+          <img
+            src="assets/Contact Address Book.png"
+            alt="Contact Address Book App"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3>Contact Address Book</h3>
+            <b
+              ><p>
+                A contact address book Android application that allows users to
+                create, view, and call contacts.
+              </p></b
+            >
+            <p>
+              Built with Java and Android Studio, with Amazon Firebase used for
+              persistent storage of data.
+            </p>
+            <div class="project-buttons-container">
+              <a
+                href="https://github.com/kstephano/Contact_Address_Book"
+                target="_blank"
+                class="project-button"
+                ><span class="code">< </span>GitHub<span class="code">
+                  /></span
+                ></a
+              >
+              <a class="disabled-btn"
+                ><span class="code">< </span>Website<span class="code">
+                  /></span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
