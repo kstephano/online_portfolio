@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
 :root {
   --typewriterSpeed: 2s;
   --typewriterCharacters: 10;
@@ -31,7 +33,7 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comfortaa", cursive;
   width: 100%;
   margin: 0;
   padding: 0;
