@@ -210,7 +210,7 @@ section {
   display: flex;
   flex-direction: row;
   margin: 0.5rem 2rem 2rem 2rem;
-  opacity: 0;
+  opacity: 1;
   transform: translateY(3rem);
   animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 3s) forwards;
 }
@@ -453,6 +453,26 @@ section {
   }
 }
 
+@media only screen and (max-width: 300px) {
+  .project-buttons-container {
+    width: 250px;
+  }
+
+  .project-info {
+    padding: 10px;
+  }
+
+  .intro__img-hello {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .intro__img-hello {
+    height: 350px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .header-nav {
     width: 100%;
@@ -487,17 +507,12 @@ section {
   .tech-img {
     height: 90px;
   }
-}
 
-@media only screen and (max-width: 300px) {
-  .project-buttons-container {
-    width: 250px;
-  }
-
-  .project-info {
-    padding: 10px;
+  .intro__img-hello {
+    height: 450px;
   }
 }
+
 @media only screen and (max-width: 520px) {
   .tech-grid {
     grid-template-columns: 1fr 1fr;
@@ -521,24 +536,6 @@ section {
   }
 }
 
-@media only screen and (max-width: 300px) {
-  .intro__img-hello {
-    height: 300px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .intro__img-hello {
-    height: 350px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .intro__img-hello {
-    height: 450px;
-  }
-}
-
 @media only screen and (max-width: 550px) {
   .intro__img-hello {
     height: 550px;
@@ -551,8 +548,9 @@ section {
   }
 
   .img-link {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
+    padding: 2px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
