@@ -1,7 +1,7 @@
 const projects = [...document.querySelectorAll(".project-div")];
 
 projectsOptions = {
-  threshold: 0.3,
+  threshold: 0.2,
 };
 
 const onIntersectProject = (entries) => {
