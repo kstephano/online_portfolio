@@ -12,7 +12,6 @@ const options = {
 
 const getTargetSection = (entry) => {
   const index = sections.findIndex((section) => section == entry.target);
-  console.log(index);
 
   if (index >= sections.length - 1) {
     return entry.target;
@@ -62,6 +61,8 @@ const onIntersect = (entries) => {
     }
 
     prevYPosition = window.scrollY;
+
+    if (!shouldUpdate(entry)) return;
 
     const target =
       direction === "down" ? getTargetSection(entry) : entry.target;
