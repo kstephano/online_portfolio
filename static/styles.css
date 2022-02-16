@@ -180,6 +180,8 @@ section {
 .intro__desc {
   text-align: center;
   margin-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   font-style: italic;
   font-size: 26px;
   opacity: 0;
@@ -565,17 +567,32 @@ section {
 @media only screen and (max-width: 450px) {
   .intro__img-hello {
     height: 450px;
+    padding-bottom: 60px;
+  }
+
+  .intro__desc {
+    padding-top: 150px;
   }
 }
 
 @media only screen and (max-width: 350px) {
   .intro__img-hello {
     height: 350px;
+    padding-bottom: 50px;
+  }
+
+  .intro__desc {
+    padding-top: 140px;
   }
 }
 
 @media only screen and (max-width: 300px) {
   .intro__img-hello {
     height: 300px;
+    padding-bottom: 50px;
+  }
+
+  .intro__desc {
+    padding-top: 120px;
   }
 }
