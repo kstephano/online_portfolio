@@ -53,7 +53,7 @@ const updateMarker = (target) => {
 };
 
 const onIntersect = (entries) => {
-  entries.forEach((entry) => {
+  entries.reverse().forEach((entry) => {
     if (window.scrollY > prevYPosition) {
       direction = "down";
     } else {
@@ -61,8 +61,6 @@ const onIntersect = (entries) => {
     }
 
     prevYPosition = window.scrollY;
-
-    if (!shouldUpdate(entry)) return;
 
     const target =
       direction === "down" ? getTargetSection(entry) : entry.target;
