@@ -253,6 +253,7 @@ section {
   display: grid;
   justify-content: center;
   width: 80%;
+  max-width: 1280px;
   gap: 1rem;
   align-items: center;
   margin: 1rem auto 4rem auto;
@@ -285,6 +286,15 @@ section {
 
 .tech-img:hover {
   height: 140px;
+}
+
+.white-circle-bg {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.p-10 {
+  padding: 10px;
 }
 
 #projects {
