@@ -2,7 +2,7 @@ const sections = [...document.querySelectorAll("[data-section]")];
 const header = document.querySelector(".header");
 const navLinks = [...document.querySelectorAll(".nav-link")];
 
-let prevYPosition = 0;
+let prevYPosition = scrollY;
 let direction = "up";
 
 const options = {
@@ -72,11 +72,11 @@ const onIntersect = (entries) => {
   });
 };
 
-document.addEventListener("readystatechange", (e) => {
-  if (e.target.readyState === "complete") {
-    updateMarker(sections[0]);
-  }
-});
+// document.addEventListener("readystatechange", (e) => {
+//   if (e.target.readyState === "complete") {
+//     updateMarker(sections[0]);
+//   }
+// });
 
 const observer = new IntersectionObserver(onIntersect, options);
 
