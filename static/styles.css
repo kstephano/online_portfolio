@@ -13,9 +13,9 @@
   --logo-white: url("../assets/logo.png");
   --logo-black: url("../assets/logo_black.png");
 
-  --header-text: var(--dark-orange);
+  --header-text: var(--floral-white);
   --header-bg: var(--space-cadet);
-  --header-bg-hover: var(--dark-orange);
+  --header-bg-hover: var(--flame);
   --section-bg: var(--flame);
   --current-logo-url: var(--logo-white);
 }
