@@ -72,12 +72,6 @@ const onIntersect = (entries) => {
   });
 };
 
-// document.addEventListener("readystatechange", (e) => {
-//   if (e.target.readyState === "complete") {
-//     updateMarker(sections[0]);
-//   }
-// });
-
 const observer = new IntersectionObserver(onIntersect, options);
 
 sections.forEach((section) => {
